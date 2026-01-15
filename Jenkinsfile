@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', poll: false, url: 'https://github.com/sapna271708/AI-chatbot.git'
+                git branch: 'main', poll: false, url: 'https://github.com/sapna271708/react_food.git'
             }
         }
 
