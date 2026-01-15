@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f  react-food'
-                    sh 'docker run -d --name my-react-app3 -p 3336:80 sapna40785/react-food'
+                    sh 'docker run -d --name my-react-app4 -p 3338:80 sapna40785/react-food'
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
         stage('Post Deployment Testing') {
             steps {
                 script {
-                    sh 'curl -I http://localhost:3336'
+                    sh 'curl -I http://localhost:3338'
                 }
             }
         }
